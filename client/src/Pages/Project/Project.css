@@ -1,0 +1,89 @@
+.project {
+    position: relative;
+    position: absolute;
+    top: 8rem;
+    z-index: -999;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    width: 45%;
+    margin-bottom: 20px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 10px;
+    margin-top: 150px;
+}
+
+.cont {
+    width: 45%;
+    margin-bottom: 20px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-radius: 10px;
+
+}
+
+.cont:window-active:hover {
+    transition: transform 0.5s ease-in-out;
+}
+
+.header h3 {
+    color: rgba(92, 88, 88, 0.6);
+    font-weight: bold;
+    text-align: left;
+    margin-left: 2%;
+    padding: 2px;
+}
+
+.header h1 {
+    color: hwb(0 4% 96%);
+    font-weight: 600;
+    text-align: left;
+    font-size: 3rem;
+    margin-left: 2%;
+}
+
+.header h1 span {
+    color: rgba(92, 157, 231, 0.943);
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: rgba(50, 49, 49, 0.272);
+}
+
+.heading {
+    padding-top: 1.5em;
+}
+
+.read-more {
+    color: black;
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.image-details .heading {
+    color: rgba(92, 88, 88, 0.6);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+
+}
+
+.image-details .description {
+    padding: 1.5rem 0;
+    color: rgba(18, 17, 17, 0.877);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 1.5rm;
+}
