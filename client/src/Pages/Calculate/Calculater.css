@@ -1,13 +1,6 @@
-.calculator-container {
-    position: relative;
-    position: absolute;
-    top:10rem;
-    z-index: -999;
-}
 
 .calculater {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin:0 20%;
 }
 
 .calculater svg {

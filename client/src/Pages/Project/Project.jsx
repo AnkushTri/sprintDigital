@@ -34,7 +34,7 @@ const Project = () => {
     },
   ];
   return (
-    <div className="project">
+    <div className="py-[5%] px-[2%]">
       <div className="header">
         <h3>FEATURED PROJECTS</h3>
         <h1>

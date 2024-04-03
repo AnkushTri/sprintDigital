@@ -4,6 +4,7 @@ import "./NavBar.css";
 import {Link} from "react-router-dom";
 
 const NavBar = () => {
+
   window.addEventListener("scroll", function () {
     var navbar = document.querySelector(".navbar");
     if (window.scrollY > window.innerHeight) {
@@ -12,17 +13,11 @@ const NavBar = () => {
       navbar.classList.remove("scrolled");
     }
   });
+
   const [isOpen, setIsOpen] = useState(false);
-  const toggleDropdown = () => {
+
+  const toggleMenu = () => {
     setIsOpen(!isOpen);
-  };
-
-  const toggleHover = () => {
-    setIsOpen(true);
-  };
-
-  const toggleHoverOff = () => {
-    setIsOpen(false);
   };
 
   return (
@@ -34,32 +29,37 @@ const NavBar = () => {
         <div className="components">
           <ul>
             <li>
-              <Link to="about">About</Link>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="about">Service</Link>
+              <Link to="/services">Services</Link>
             </li>
             <li>
-              <Link to="about">Project</Link>
+              <Link to="/projects">Projects</Link>
             </li>
-            <li>
-              <select
-                onMouseEnter={toggleHover}
-                onMouseLeave={toggleHoverOff}
-                className="dropdown-toggle"
-              >
-                Resource
+            <li onMouseEnter={toggleMenu} onMouseLeave={toggleMenu}>
+              <div className="dropdown text-white relative">
+                <button className="dropdown-toggle" onClick={toggleMenu}>
+                  Resource
+                </button>
                 {isOpen && (
-                  <div className="dropdown-menu">
-                    <option>Articles</option>
-                    <li>Calculate</li>
+                  <div className="dropdown-menu absolute left-[-1rem] z-[999] bg-black px-4">
+                    <Link to="/articles">
+                      <option>Articles</option>
+                    </Link>
+                    <Link to="/calculate">
+                      <option>Calculate</option>
+                    </Link>
                   </div>
                 )}
-              </select>
+              </div>
             </li>
           </ul>
         </div>
-        <button className="btn">Contact Us</button>
+        <button className="btn">
+          {" "}
+          <Link to="/contact">Contact Us</Link>
+        </button>
       </div>
     </nav>
   );

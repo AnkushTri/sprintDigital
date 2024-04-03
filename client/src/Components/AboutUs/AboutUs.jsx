@@ -48,9 +48,9 @@ const AboutUs = () => {
         </h3>
       </div>
       <div className="w-[80%] flex justify-between gap-[5%] my-8">
-        {apiImg?.map((item) => {
+        {apiImg?.map((item,index) => {
           return (
-            <div>
+            <div key={index}>
               <img src={item.api} alt="api_img" />
             </div>
           );
