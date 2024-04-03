@@ -1,0 +1,12 @@
+:root {
+    --color-primary: #0DC9C5;
+    --color-primary-active: #298201;
+    --color-secondary: #53b1f3;
+    --color-btn-hover: #0ec3c0;
+    --bg-color:#212529;
+    font-family: "Soleil", serif;
+    overflow-x: hidden;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

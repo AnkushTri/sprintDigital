@@ -1,0 +1,42 @@
+.marquee-wrapper {
+  overflow: hidden;
+}
+
+.marquee-container {
+  white-space: nowrap;
+  padding-right: 2rem; /* Adjust the spacing between marquee items */
+  animation: marquee 10s linear infinite; /* Adjust the duration as needed */
+}
+.marquee-container1 {
+  white-space: nowrap;
+  padding-right: 2rem; /* Adjust the spacing between marquee items */
+  animation: marquee1 10s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes marquee1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.marquee-item {
+    margin: -1rem 0;
+  display: inline-block;
+  background-clip: text;
+  color:transparent;
+  -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: rgb(233, 230, 230);
+  
+}
+

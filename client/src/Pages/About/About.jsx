@@ -1,0 +1,164 @@
+// import Scroll from "../../Components/Scroll/Scroll";
+import React from "react";
+import Ticker from "../../Components/Ticker";
+import "./About.css"
+import {Link} from "react-router-dom"
+
+const About = () => {
+  const values = [
+    {
+      img: "images/innovation.png",
+      title: "Innovation",
+      description:
+        "We value creative thinking to generate thoughtful solutions for complex problems.",
+    },
+    {
+      img: "images/adaptation.png",
+      title: "Adaption",
+      description:
+        "We strive to overcome roadblocks efficiently to help you reach your business goals.t",
+    },
+    {
+      img: "images/collaboration.png",
+      title: "Collaboration",
+      description:
+        "When you partner with us, we become part of your team and share your vision.",
+    },
+  ];
+
+  return (
+    <div>
+      <div className="w-[50%] px-[2%] py-8 py-[5%]">
+        <h3 className="text-[#464652] text-[1.2rem]">About Us</h3>
+        <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
+          <span className="text-[var(--color-primary)]">
+            Chandigarh leaders{" "}
+          </span>
+          in custom software development
+        </h1>
+        <p className="py-5 leading-7 text-[1.2rem]">
+          We are an India-based software agency that designs and develops
+          digital products for the people that use them. Our strength lies in
+          our talented team and our capability to develop end-to-end business
+          process solutions in-house.
+        </p>
+      </div>
+      {/* <div><Scroll /></div> */}
+      {/* what we do */}
+      <div className="flex px-[5%] gap-10 py-[8rem]">
+        <div className="title  w-[50%] ">
+          <h3 className=" text-[#464652] text-[1.2rem] uppercase">
+            What We do
+          </h3>
+          <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
+            Here at Sprint, we{" "}
+            <span className="text-[var(--color-primary)]"> create change</span>
+          </h1>
+        </div>
+        <div className="w-[50%]">
+          <p className="my-5 leading-7 text-[1.2rem]">
+            We work with clients from a range of industries, and have spent the
+            past decade perfecting our craft. Our goal is to make digital
+            products that are a joy to use, and we measure our success by the
+            impact that our products have on our clients' businesses.
+          </p>
+          <p className="my-1 leading-7 text-[1.2rem]">
+            We’re here to help you create change. If you’re looking for a
+            talented team of designers and software engineers who can help you
+            turn your vision into reality, then we'd love to hear from you.
+          </p>
+          <div className=" border rounded-3xl w-[30%]  text-white my-5 bg-[var(--color-primary)]">
+            <button type="button" className="py-3 px-4 w-[100%] mx-auto">
+              Get in touch
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* OUr core values */}
+      <div className="px-[5%] gap-10 py-[8rem]">
+        <div className="title  w-[50%] ">
+          <h3 className=" text-[#66666e] text-[1.2rem] uppercase">
+            Our core values
+          </h3>
+          <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
+            Our fuel to{" "}
+            <span className="text-[var(--color-primary)]">
+              {" "}
+              go the distance
+            </span>
+          </h1>
+        </div>
+        <div className="flex justify-between my-12">
+          {values.map((el, index) => {
+            return (
+              <div key={index} className="w-[30%]">
+                <img src={el.img} alt="value" className="my-5" />
+                <h1 className="text-[1.5rem] my-5 font-black">{el.title}</h1>
+                <p className="my-5 text-[1.2rem]">{el.description}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* How we do it */}
+      <div className="flex px-[5%] gap-10 py-[8rem] bg-[#eae8e8]">
+        <div className="title  w-[50%] ">
+          <h3 className=" text-[#464652] text-[1.2rem] uppercase">
+            how we do it
+          </h3>
+          <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
+            Agility that keeps us{" "}
+            <span className="text-[var(--color-primary)]"> moving forward</span>
+          </h1>
+          <p className="my-1 leading-7 text-[1.2rem]">
+            At Sprint we are committed to delivering results. Using our Agile
+            workflow, we collaborate with you to iterate on and refine your
+            product as it takes shape.
+          </p>
+        </div>
+      </div>
+
+      {/* contact us */}
+
+      {/* infinte text */}
+      <div className="bg-[#63dfdd] relative ">
+        <div className="marquee-wrapper text-[5rem] line-climb-6">
+          <div className="marquee-container1 ">
+            <p className="marquee-item">
+              Contact Us Contact Us Contact Us Contact Us Contact Us Contact Us
+              Contact UsContact Us
+            </p>
+          </div>
+          <div className="marquee-container">
+            <p className="marquee-item ">
+              Contact Us Contact Us Contact Us Contact Us Contact Us Contact Us
+              Contact UsContact Us
+            </p>
+          </div>
+          <div className="text-[3rem] text-white text-center hover:my-5 text-bolder ">
+            <Link to="/contact" className="cursor-pointer">
+              {" "}
+              Contact Us
+            </Link>
+          </div>
+          <div className="marquee-container1 ">
+            <p className="marquee-item">
+              Contact Us Contact Us Contact Us Contact Us Contact Us Contact Us
+              Contact UsContact Us
+            </p>
+          </div>
+          <div className="marquee-container">
+            <p className="marquee-item">
+              Contact Us Contact Us Contact Us Contact Us Contact Us Contact Us
+              Contact UsContact Us
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
