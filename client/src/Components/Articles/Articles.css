@@ -1,0 +1,91 @@
+h1 {
+    color: black;
+    font-family: 'Soleil', sans-serif;
+}
+
+.article h2 {
+    color: rgb(152, 149, 149);
+    font-family: 'Soleil', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 auto;
+    overflow-x: hidden;
+}
+
+.article {
+    padding-top: 12vh;
+    padding-left:5%;
+}
+
+.items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.items a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    border-radius: 20px;
+    gap: 2rem;
+    margin: 15px 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card h1 {
+    font-size: 1.5rem;
+    font-family: 'Soleil', sans-serif;
+    color: black;
+}
+
+.card p {
+    font-size: 1rem;
+    font-family: 'Soleil', sans-serif;
+    color: rgba(44, 39, 39, 0.646);
+}
+
+.card h3 {
+    color: rgba(120, 119, 119, 0.356);
+    font-family: 'Soleil', sans-serif;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 2PX;
+
+}
+
+.card .rm {
+    color: black;
+    font-family: 'Soleil', sans-serif;
+    text-decoration: underline;
+    font-size: large;
+}
+
+.article h2 {
+    color: slategray;
+    font-family: 'Soleil', sans-serif;
+    font-weight: 700;
+}
+
+.article h1 {
+    color: black;
+    font-family: 'Soleil', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.article span h1 {
+    color: #2342b1;
+}
