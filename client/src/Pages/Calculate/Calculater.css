@@ -2,14 +2,6 @@
 .calculater {
     margin:0 20%;
 }
-
-.calculater svg {
-    margin: 0 auto;
-    padding: 0 auto;
-    margin-left: 20%;
-    height:60vh;
-}
-
 .head h1 {
     font-size: 4.5rem;
     font-weight: 700;
@@ -21,26 +13,4 @@
 
 .head h1 span {
     color: #5c7fdfda;
-}
-
-.header {
-    text-align: center;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #75707095;
-    margin-bottom: 1.5rem;
-    margin-top: 12vh;
-    letter-spacing: 4px;
-}
-
-.head h3 {
-    text-align: center;
-    font: size 0.5em;
-    ;
-    font-weight: 500;
-    color: #000;
-    letter-spacing: 2px;
-    text-justify: auto;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
 }
