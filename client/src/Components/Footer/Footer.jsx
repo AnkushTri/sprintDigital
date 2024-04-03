@@ -1,5 +1,8 @@
 import React from "react";
 import { IoIosStar } from "react-icons/io";
+import { FaInstagram } from "react-icons/fa6";
+import { CiLinkedin } from "react-icons/ci";
+import { FiTwitter } from "react-icons/fi";
 
 const Footer = () => {
   return (
@@ -73,13 +76,22 @@ const Footer = () => {
         <div className="text-[1.2rem]">
           <h2 className="py-2 text-[#bab7b7]">Follow us on</h2>
           <ul>
-            <li className="py-2">
+            <li className="py-2 flex items-center gap-2">
+              <div>
+                <FaInstagram />
+              </div>{" "}
               <a href="">Facebook</a>
             </li>
-            <li className="py-2">
+            <li className="py-2 flex items-center gap-2">
+              <div>
+                <CiLinkedin />
+              </div>{" "}
               <a href="">Instagram</a>
             </li>
-            <li className="py-2">
+            <li className="py-2 flex items-center gap-2">
+              <div>
+                <FiTwitter />
+              </div>
               <a href="">Twitter</a>
             </li>
           </ul>

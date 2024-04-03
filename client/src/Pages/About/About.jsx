@@ -1,8 +1,7 @@
 // import Scroll from "../../Components/Scroll/Scroll";
 import React from "react";
-import Ticker from "../../Components/Ticker";
 import "./About.css"
-import {Link} from "react-router-dom"
+import ScrollingContact from "../../Components/ScrollingContact/ScrollingContact";
 
 const About = () => {
   const values = [
@@ -123,40 +122,8 @@ const About = () => {
       {/* contact us */}
 
       {/* infinte text */}
-      <div className="bg-[#63dfdd] relative ">
-        <div className="marquee-wrapper text-[5rem] line-climb-6">
-          <div className="marquee-container1 ">
-            <p className="marquee-item">
-              Contact Us Contact Us Contact Us Contact Us Contact Us Contact Us
-              Contact UsContact Us
-            </p>
-          </div>
-          <div className="marquee-container">
-            <p className="marquee-item ">
-              Contact Us Contact Us Contact Us Contact Us Contact Us Contact Us
-              Contact UsContact Us
-            </p>
-          </div>
-          <div className="text-[3rem] text-white text-center hover:my-5 text-bolder ">
-            <Link to="/contact" className="cursor-pointer">
-              {" "}
-              Contact Us
-            </Link>
-          </div>
-          <div className="marquee-container1 ">
-            <p className="marquee-item">
-              Contact Us Contact Us Contact Us Contact Us Contact Us Contact Us
-              Contact UsContact Us
-            </p>
-          </div>
-          <div className="marquee-container">
-            <p className="marquee-item">
-              Contact Us Contact Us Contact Us Contact Us Contact Us Contact Us
-              Contact UsContact Us
-            </p>
-          </div>
-        </div>
-      </div>
+      <ScrollingContact/>
+     
     </div>
   );
 };

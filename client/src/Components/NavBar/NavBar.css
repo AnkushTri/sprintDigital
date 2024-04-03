@@ -1,0 +1,113 @@
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    gap:2rem;
+    background-color: #0d1318;
+    margin: 0 auto;
+    padding: 2% 2%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+.log
+{
+    margin: auto;
+    margin-left:20px;
+}
+.components
+{
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+    list-style: none;
+}
+.components ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    gap: 20px;
+}
+.components ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.components ol li{
+    display:flex;
+    height: fit-content;
+
+}
+.components ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    position: relative;
+}
+
+.components ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.components ul li a:hover::after {
+    background-color: #918888;
+    /* Change this to your desired border color */
+    animation: borderAnimation 2s infinite ease-in all;
+    /* Adjust duration and direction as needed */
+}
+
+@keyframes borderAnimation {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+.btn
+{
+    display: flex-end;
+    color: #ffff;
+    background-color: #0DC9C5;
+    border-radius: 20px;
+    font-size: 16px;
+    font-family:"soleil";
+    font-weight: 400;
+    padding:0.5rem 1rem;
+}
+
+.components .dropdown-menu {
+    display: none;
+}
+
+.components .dropdown-toggle:hover .dropdown-menu {
+    display: block;
+}
+
+.navbar {
+    background-color:#0d1318;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color:white;
+}
+.navbar.scrolled .components ul li a{
+    color: black;
+}
+ .navbar.scrolled .log img{
+    background-clip: text;
+    background: transparent;
+}
+.navbar.scrolled .log{
+     background-color: #060606;
+     padding: 5px 5px;
+     border-radius: 10px;
+}

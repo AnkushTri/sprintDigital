@@ -18,7 +18,7 @@ const Contacts = () => {
       </div>
 
       {/* contact form */}
-      <div className="bg-[var(--color-primary)] w-[100%] contact_home flex py-12">
+      <div className="bg-[var(--color-primary)] w-[100%] contact_home flex py-12 px-[2%]">
         <div className=" text-[white] flex-1 my-10">
           <h3 className=" text-[#464652] text-[1.2rem]">Get in touch</h3>
           <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
