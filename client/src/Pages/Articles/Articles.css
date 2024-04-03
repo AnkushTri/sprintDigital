@@ -1,29 +1,19 @@
-h1 {
-    color: black;
-    font-family: 'Soleil', sans-serif;
-}
-
 .article h2 {
     color: rgb(152, 149, 149);
     font-family: 'Soleil', sans-serif;
 }
 
-.container {
-    margin: 0 auto;
-    padding: 0 auto;
-    overflow-x: hidden;
-}
-
 .article {
     padding-top: 12vh;
-    padding-left:5%;
+
 }
 
 .items {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: wrap;
-
+    width: 100%;
+    margin: 0 10%;
 }
 
 .items a {
@@ -31,16 +21,16 @@ h1 {
     color: black;
 
 }
+
 .card {
-    width: calc(33.33% - 20px);
+    width: 33.3%;
     border-radius: 20px;
-    gap: 2rem;
-    margin: 15px 10px;
+
 }
 
 .card img {
-    width: 100%;
-    height: auto;
+    width:100%;
+    height:auto;
     border-radius: 20px;
 }
 
@@ -75,8 +65,9 @@ h1 {
 .article h1 {
     color: black;
     font-family: 'Soleil', sans-serif;
-   
+
 }
+
 .article span h1 {
     color: #2342b1;
 }

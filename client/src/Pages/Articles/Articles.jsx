@@ -86,9 +86,9 @@ const Articles = () => {
     },
   ];
   return (
-    <div className="container">
-      <div className="article">
-        <h2 className=" py-4 text-2xl ">ARTICLES</h2>
+    <div className="container w-[100%]">
+      <div className="article  px-[5%]">
+        <h2 className=" py-4 text-2xl">ARTICLES</h2>
         <h1 className=" py-2 text-[3em] font-bold">A collection of </h1>
         <span className=" py-2 text-[3rem] font-bold">
           <h1>articles tips & </h1>
@@ -97,17 +97,16 @@ const Articles = () => {
       </div>
       <div className="items">
         {article.map((item) => (
-          <a key={item.id} href={item.link} className="card">
-            <img
-              src={item.image}
-              alt={item.title}
-              height="408px"
-              width="300px"
-            />
-            <h3 className="">{item.h2}</h3>
-            <h2>{item.title}</h2>
-            <p>{item.paragraph}</p>
-            <a className="rm" href={item.link}>
+          <a
+            key={item.id}
+            href={item.link}
+            className="card p-[2rem] items-center"
+          >
+            <img src={item.image} alt={item.title} height="100%" width="100%" />
+            <h3 className="p-3">{item.h2}</h3>
+            <h2 className="p-1">{item.title}</h2>
+            <p className="p-1">{item.paragraph}</p>
+            <a className="rm p-1" href={item.link}>
               Read More..
             </a>
           </a>
