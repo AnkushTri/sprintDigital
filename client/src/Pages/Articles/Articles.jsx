@@ -88,9 +88,9 @@ const Articles = () => {
   return (
     <div className="container">
       <div className="article">
-        <h2>ARTICLES</h2>
-        <h1>A collection of </h1>
-        <span>
+        <h2 className=" py-4 text-2xl ">ARTICLES</h2>
+        <h1 className=" py-2 text-[3em] font-bold">A collection of </h1>
+        <span className=" py-2 text-[3rem] font-bold">
           <h1>articles tips & </h1>
           <h1>customer stories</h1>
         </span>
