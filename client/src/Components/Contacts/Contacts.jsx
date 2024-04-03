@@ -3,20 +3,6 @@ import React from 'react'
 const Contacts = () => {
   return (
     <>
-      <div className="w-[100%] py-[10%] px-[2%] ">
-        <div className="title  w-[50%] text-center mx-auto">
-          <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
-            Get Your Head in the{" "}
-            <span className="text-[var(--color-primary)]"> Cloud</span>
-          </h1>
-          <p className="py-5 leading-7 text-[1.2rem]">
-            Day dreaming of changing the world, or maybe just your business?
-            Whichever it may be, we're backing you to make it happen. The sky's
-            the limit, so what can we help you achieve?
-          </p>
-        </div>
-      </div>
-
       {/* contact form */}
       <div className="bg-[var(--color-primary)] w-[100%] contact_home flex py-12 px-[2%]">
         <div className=" text-[white] flex-1 my-10">

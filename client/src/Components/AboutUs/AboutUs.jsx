@@ -48,7 +48,7 @@ const AboutUs = () => {
         </h3>
       </div>
       <div className="w-[80%] flex justify-between gap-[5%] my-8">
-        {apiImg?.map((item,index) => {
+        {apiImg?.map((item, index) => {
           return (
             <div key={index}>
               <img src={item.api} alt="api_img" />
@@ -56,7 +56,19 @@ const AboutUs = () => {
           );
         })}
       </div>
-        
+      <div className="w-[100%] py-[10%] px-[2%] ">
+        <div className="title  w-[50%] text-center mx-auto">
+          <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
+            Get Your Head in the{" "}
+            <span className="text-[var(--color-primary)]"> Cloud</span>
+          </h1>
+          <p className="py-5 leading-7 text-[1.2rem]">
+            Day dreaming of changing the world, or maybe just your business?
+            Whichever it may be, we're backing you to make it happen. The sky's
+            the limit, so what can we help you achieve?
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
