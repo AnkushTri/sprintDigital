@@ -32,10 +32,10 @@ const NavBar = () => {
               <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/service">Service</Link>
+              <Link to="/services">Services</Link>
             </li>
             <li>
-              <Link to="/projects">Project</Link>
+              <Link to="/projects">Projects</Link>
             </li>
             <li onMouseEnter={toggleMenu} onMouseLeave={toggleMenu}>
               <div className="dropdown text-white relative">
@@ -56,7 +56,10 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <button className="btn">Contact Us</button>
+        <button className="btn">
+          {" "}
+          <Link to="/contact">Contact Us</Link>
+        </button>
       </div>
     </nav>
   );

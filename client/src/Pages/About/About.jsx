@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <div>
-      <div className="w-[50%] px-[2%] py-8 py-[5%]">
+      <div className="w-[50%] px-[2%] py-[5%]">
         <h3 className="text-[#464652] text-[1.2rem]">About Us</h3>
         <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
           <span className="text-[var(--color-primary)]">

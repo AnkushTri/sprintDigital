@@ -3,7 +3,7 @@ import React from 'react'
 const Contacts = () => {
   return (
     <>
-      <div className="w-[100%] py-[3rem] px-[2%] ">
+      <div className="w-[100%] py-[10%] px-[2%] ">
         <div className="title  w-[50%] text-center mx-auto">
           <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
             Get Your Head in the{" "}
