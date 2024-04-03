@@ -80,7 +80,7 @@ const Services = () => {
       <div className="service_type pt-12">
         {
             services.map((el)=>{
-               return <div className="ser">
+               return <div className="ser" key={el}>
                 <h1>{el.type}</h1>
                 {
                     el?.content.map((item)=>{

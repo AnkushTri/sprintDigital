@@ -83,13 +83,7 @@
     padding:0.5rem 1rem;
 }
 
-.components .dropdown-menu {
-    display: none;
-}
 
-.components .dropdown-toggle:hover .dropdown-menu {
-    display: block;
-}
 
 .navbar {
     background-color:#0d1318;
@@ -97,6 +91,9 @@
 }
 
 .navbar.scrolled {
+    background-color:white;
+}
+.navbar.scrolled .dropdown-menu{
     background-color:white;
 }
 .navbar.scrolled .components ul li a{
@@ -110,4 +107,7 @@
      background-color: #060606;
      padding: 5px 5px;
      border-radius: 10px;
+}
+.navbar.scrolled .dropdown{
+    color:#0d1318
 }

@@ -1,9 +1,3 @@
-.project {
-    position: relative;
-    position: absolute;
-    top: 8rem;
-    z-index: -999;
-}
 
 .image-gallery {
     display: flex;
