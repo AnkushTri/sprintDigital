@@ -21,7 +21,7 @@ h1 {
 
 .items {
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     flex-wrap: wrap;
 
 }
@@ -31,7 +31,6 @@ h1 {
     color: black;
 
 }
-
 .card {
     width: calc(33.33% - 20px);
     border-radius: 20px;
@@ -43,12 +42,6 @@ h1 {
     width: 100%;
     height: auto;
     border-radius: 20px;
-}
-
-.card h1 {
-    font-size: 1.5rem;
-    font-family: 'Soleil', sans-serif;
-    color: black;
 }
 
 .card p {
@@ -82,10 +75,8 @@ h1 {
 .article h1 {
     color: black;
     font-family: 'Soleil', sans-serif;
-    font-weight: 800;
-    font-size: 2rem;
+   
 }
-
 .article span h1 {
     color: #2342b1;
 }
