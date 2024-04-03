@@ -4,9 +4,11 @@ import About from './Pages/About/About'
 import Error from './Pages/Error/Error'
 import NavBar from './Components/NavBar/NavBar'
 import Footer from './Components/Footer/Footer'
+import Articles from './Pages/Articles/Articles'
 import {BrowserRouter,Routes,Route} from "react-router-dom"
 import "./App.css"
 import Contacts from './Components/Contacts/Contacts'
+
 
 const App = () => {
   return (
@@ -16,6 +18,7 @@ const App = () => {
     <Route path="/" element={<Home/>} />
     <Route path="/about" element={<About/>} />
     <Route path="/contact" element={<Contacts/>} />
+    <Route path="/article" element={<Articles/>} />
     <Route path="*" element={<Error/>}/>
    </Routes>
    <Footer/>

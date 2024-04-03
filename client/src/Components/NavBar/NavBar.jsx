@@ -43,19 +43,19 @@ const NavBar = () => {
               <Link to="about">Project</Link>
             </li>
             <li>
-              <a
+              <select
                 onMouseEnter={toggleHover}
                 onMouseLeave={toggleHoverOff}
                 className="dropdown-toggle"
               >
                 Resource
                 {isOpen && (
-                  <ol className="dropdown-menu">
-                    <li>Articles</li>
+                  <div className="dropdown-menu">
+                    <option>Articles</option>
                     <li>Calculate</li>
-                  </ol>
+                  </div>
                 )}
-              </a>
+              </select>
             </li>
           </ul>
         </div>
