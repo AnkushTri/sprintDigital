@@ -14,3 +14,22 @@
 .head h1 span {
     color: #5c7fdfda;
 }
+
+form label{
+    color:#181818;
+    font-weight: 300;
+    margin: 1.5em 0 !important;
+}
+form span{
+    color:red;
+    margin:0 2px;
+}
+form input{
+    background-color: rgb(228, 226, 225);
+    padding: 0.7rem 1rem !important;
+
+}
+
+form input:focus{
+     outline: 2px solid rgb(170, 217, 243);
+}
