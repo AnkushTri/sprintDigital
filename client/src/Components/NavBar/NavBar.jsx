@@ -23,7 +23,9 @@ const NavBar = () => {
     <nav>
       <div className="navbar xsm:w-[100vw]">
         <div className="log">
-          <img src="logos/sprint.svg" alt="sprint" />
+          <a href="/">
+            <img src="logos/sprint.svg" alt="sprint" />
+          </a>
         </div>
         <div className="components">
           <ul className="xsm:flex-col">
