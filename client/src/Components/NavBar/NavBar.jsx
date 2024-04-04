@@ -43,7 +43,7 @@ const NavBar = () => {
                   Resource
                 </button>
                 {isOpen && (
-                  <div className="dropdown-menu absolute left-[-1rem] z-[999] bg-black px-4">
+                  <div className="dropdown-menu absolute left-[-1rem] z-[999] bg-black px-4 hover:border-b-black">
                     <Link to="/articles">
                       <option>Articles</option>
                     </Link>
