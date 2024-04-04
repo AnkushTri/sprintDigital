@@ -7,8 +7,8 @@ import { FiTwitter } from "react-icons/fi";
 const Footer = () => {
   return (
     <div className="bg-[#494949] flex flex-col px-[10%] py-12">
-      <div className="flex ">
-        <div className="w-[65%]">
+      <div className="flex xsm:flex-col gap-12">
+        <div className="w-[65%] xsm:w-full">
           <h1 className="text-[2rem] text-white font-bold my-4">
             Ready when You are
           </h1>
