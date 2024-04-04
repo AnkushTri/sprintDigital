@@ -2,6 +2,7 @@ import React from "react";
 import ScrollingContact from "../../Components/ScrollingContact/ScrollingContact";
 import { useNavigate } from "react-router-dom";
 import Contacts from "../../Components/Contacts/Contacts";
+import "./Services.css";
 
 const Services = () => {
   const navigate = useNavigate();
@@ -128,6 +129,9 @@ const Services = () => {
             you streamline your business operations, get in touch with Sprint
             Digital today.
           </p>
+        </div>
+        <div>
+          <button>Get in Touch</button>
         </div>
         <div className="w-2/5"></div>
       </div>
