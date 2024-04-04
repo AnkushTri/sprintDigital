@@ -82,20 +82,21 @@ const Calculate = () => {
     },
   ];
   const industries = [
-  "Technology",
-  "Finance",
-  "Healthcare",
-  "Retail",
-  "Manufacturing",
-  "Education",
-  "Entertainment",
-  "Hospitality",
-  "Transportation",
-  "Real Estate",
-  "Government",
-  "Telecommunications",
-  "Media",
-  "Energy",]
+    "Technology",
+    "Finance",
+    "Healthcare",
+    "Retail",
+    "Manufacturing",
+    "Education",
+    "Entertainment",
+    "Hospitality",
+    "Transportation",
+    "Real Estate",
+    "Government",
+    "Telecommunications",
+    "Media",
+    "Energy",
+  ];
   return (
     <div className="pt-[15%] pb-[5%] px-[5%]">
       <div className="calculater">
@@ -139,7 +140,9 @@ const Calculate = () => {
         </div>
         <div className="tellusabt">
           <div>
-            <h3>On average, what is your business' annual turnover?</h3>
+            <h3 className="font-semibold text-xl text-center">
+              On average, what is your business' annual turnover?
+            </h3>
             <p className="text-center py-2">{operation} $k</p>
             <input
               type="range"
@@ -162,7 +165,7 @@ const Calculate = () => {
                       <input
                         type="checkbox"
                         id={el.tag}
-                        className="outline-none bg-[grey]"
+                        className="outline-none w-12 h-6 bg-slate-400"
                       />
                       <span className="px-4">
                         {el.tag}{" "}
@@ -173,6 +176,7 @@ const Calculate = () => {
                     </div>
                   );
                 })}
+                {/* <label htmlFor="Input">Other's Please Specify</label> */}
                 <input
                   type="text"
                   className="py-2 px-3 rounded-lg bg-[#e2f1ee] focus:outline-[#7ec6cd]"
@@ -268,8 +272,11 @@ const Calculate = () => {
             </div>
             <img src="logos/captcha.png" alt="captcha" className="w-12" />
           </div>
-          <div className=" border rounded-3xl w-[100%]  text-white bg-[#2ae8f2] my-3">
-            <button type="button" className="py-4 w-[100%] mx-auto font-light">
+          <div className=" border rounded-3xl w-[100%] text-xl text-white bg-[#0DC9C5] my-3">
+            <button
+              type="button"
+              className="py-4 w-[100%] mx-auto font-light uppercase"
+            >
               Calculate my saving
             </button>
           </div>

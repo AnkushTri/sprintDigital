@@ -1,6 +1,6 @@
 // import Scroll from "../../Components/Scroll/Scroll";
 import React from "react";
-import "./About.css"
+import "./About.css";
 import ScrollingContact from "../../Components/ScrollingContact/ScrollingContact";
 
 const About = () => {
@@ -27,8 +27,10 @@ const About = () => {
 
   return (
     <div>
-      <div className="w-[50%] px-[2%] py-[5%]">
-        <h3 className="text-[#464652] text-[1.2rem]">About Us</h3>
+      <div className="w-[50%] px-[2%] pt-[10%]">
+        <h3 className="text-[#46465294] text-[1.8rem] uppercase font-bold">
+          About Us
+        </h3>
         <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
           <span className="text-[var(--color-primary)]">
             Chandigarh leaders{" "}
@@ -122,8 +124,7 @@ const About = () => {
       {/* contact us */}
 
       {/* infinte text */}
-      <ScrollingContact/>
-     
+      <ScrollingContact />
     </div>
   );
 };

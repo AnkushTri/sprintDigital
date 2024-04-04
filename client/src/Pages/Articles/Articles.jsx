@@ -108,6 +108,7 @@ const Articles = () => {
                 alt={item.title}
                 height="100%"
                 width="100%"
+                className="rounded-lg"
               />
               <h3 className="p-3">{item.h2}</h3>
               <h2 className="p-1">{item.title}</h2>

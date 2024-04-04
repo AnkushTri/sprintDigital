@@ -6,13 +6,13 @@ import { FiTwitter } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <div className="bg-[#494949] flex flex-col px-[10%] py-12 xsm:px-[5%]">
-      <div className="flex xsm:flex-col gap-10">
+    <div className="bg-[#494949] flex flex-col px-[10%] py-12">
+      <div className="flex ">
         <div className="w-[65%]">
-          <h1 className="text-[1.8rem] text-white font-bolder my-4">
+          <h1 className="text-[2rem] text-white font-bold my-4">
             Ready when You are
           </h1>
-          <button className="bg-[#7cecf6] text-white rounded-3xl py-2 px-3">
+          <button className="bg-[#0DC9C5] text-white rounded-3xl py-4 px-8">
             Get in Touch
           </button>
         </div>
