@@ -106,7 +106,7 @@ const Services = () => {
           );
         })}
       </div>
-      <div className="Expert mx-[-3%] bg-slate-100 flex h-[90vh] py-4">
+      <div className="Expert mx-[-3%] bg-slate-100 flex  py-4">
         <div className="w-2/3">
           <h1 className="text-[3rem] my-3 text-center mx-6 font-2xl">
             Talk to an Expert

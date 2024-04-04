@@ -120,15 +120,10 @@ const Wrapper = styled.div`
     margin: 3rem 0;
     display: flex;
     justify-content: space-between;
-    /* gap:15%; */
     h1{
         font-weight: bolder;
         color:black;
         font-size: 3rem;
-    }
-    .ser{
-        /* border: 1px solid grey; */
-        width: 30%;
     }
     li {
     display: flex;
@@ -144,7 +139,7 @@ const Wrapper = styled.div`
       width: 20px; 
       height: 20px; 
       border:1px solid black;
-      background-color: #bce6e7; /* Color of the circle */
+      background-color: #bce6e7; 
       border-radius: 50%;
       margin: 0px 0.5rem;
     }

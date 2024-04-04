@@ -6,6 +6,12 @@
     --bg-color:#212529;
     font-family: "Soleil", serif;
     overflow-x: hidden;
+    font-size: 16px;
+
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+        overflow-x: hidden;
+    }
 }
 @tailwind base;
 @tailwind components;

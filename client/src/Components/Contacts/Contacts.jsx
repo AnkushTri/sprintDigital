@@ -53,7 +53,7 @@ function Contacts() {
               </div>
               <img src="logos/captcha.png" alt="captcha" className="w-12" />
             </div>
-            <div className=" border rounded-2xl w-[90%]  text-white my-3">
+            <div className=" border rounded-3xl w-[90%]  text-white my-3">
               <button type="button" className='py-3 w-[100%] mx-auto'>Send message</button>
             </div>
           </form>

@@ -22,12 +22,12 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div className="navbar">
+      <div className="navbar xsm:flex-col w-[100vw]">
         <div className="log">
           <img src="logos/sprint.svg" alt="sprint" />
         </div>
         <div className="components">
-          <ul>
+          <ul className="xsm:flex-col">
             <li>
               <Link to="/about">About</Link>
             </li>
