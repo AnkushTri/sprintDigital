@@ -1,14 +1,13 @@
-import React from 'react'
-import ScrollingContact from '../../Components/ScrollingContact/ScrollingContact';
+import React from "react";
+import ScrollingContact from "../../Components/ScrollingContact/ScrollingContact";
 import { useNavigate } from "react-router-dom";
-import Contacts from '../../Components/Contacts/Contacts';
+import Contacts from "../../Components/Contacts/Contacts";
 
 const Services = () => {
-
-  const navigate=useNavigate()
-  const handleNav=(path)=>{
+  const navigate = useNavigate();
+  const handleNav = (path) => {
     navigate(`/${path}`);
-  }
+  };
   const softwareData = [
     {
       title: "Software Design",
@@ -35,34 +34,40 @@ const Services = () => {
       description2:
         " Whether you need a new bespoke software product built from scratch, an existing solution modernised or anything in between, our team has the years of experience and expertise to get the job done. Talk to us about your custom software development needs today.",
       image: "services-img/hero-support.png",
-      work: [" Software Consulting", "Project Rescue", "Service Level Agreements"],
+      work: [
+        " Software Consulting",
+        "Project Rescue",
+        "Service Level Agreements",
+      ],
     },
   ];
 
-
   return (
-    <div className="px-[3%] py-[10rem]">
-      <div className="w-[50%]">
-        <h3 className="text-[#464652] text-[1.2rem]">Services</h3>
+    <div className="px-[3%] py-[10rem] w-[100%]">
+      <div className="w-[70%]">
+        <h3 className="text-[#4444489e] text-[1.2rem] uppercase font-bold ">
+          Our Services
+        </h3>
         <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
-          Custom{" "}
+          Custom
           <span className="text-[var(--color-primary)]">
+            {" "}
             Software Development{" "}
           </span>
-          Service
+          Services
         </h1>
-        <p className="py-5 leading-7 text-[1.2rem] text-[#4b4a4a]">
+        <p className="py-5 leading-7 text-[1.2rem] text-[#4b4a4a] w-[70%]">
           We are an India-based software agency that designs and develops
           digital products for the people that use them. Our strength lies in
           our talented team and our capability to develop end-to-end business
           process solutions in-house.
         </p>
       </div>
-      <div>
-        {softwareData?.map((el,index) => {
+      <div className="py-6">
+        {softwareData?.map((el, index) => {
           return (
             <div className="flex py-[6rem] gap-[8%]" key={index}>
-              <div className={index===1?"flex-1 order-2":"flex-1"}>
+              <div className={index === 1 ? "flex-1 order-2" : "flex-1"}>
                 <h1 className="text-[2.5rem] font-extrabold leading-[4.5rem]  mt-5">
                   {el.title}
                 </h1>
@@ -76,39 +81,61 @@ const Services = () => {
                   <h2 className="text-[#464652] text-[1.2rem] uppercase py-2">
                     Things we do
                   </h2>
-                  <div>{el.work.map((data,index)=>{
-                    return(
-                    <h2 className="py-2 ">
-                      <button
-                        to="projects"
-                        className="border-black border-b-[3px] py-1 hover:text-[#4d4b4b]"
-                        onClick={() => handleNav("projects")}
-                      >
-                       {data}
-                      </button>
-                    </h2>
-                    );
-                  })}</div>
-                  
+                  <div>
+                    {el.work.map((data, index) => {
+                      return (
+                        <h2 className="py-2 ">
+                          <button
+                            to="projects"
+                            className="border-black border-b-[3px] py-1 hover:text-[#4d4b4b]"
+                            onClick={() => handleNav("projects")}
+                          >
+                            {data}
+                          </button>
+                        </h2>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
               <div className="flex-1">
-                <img
-                  src={el.image}
-                  alt="hero"
-                  className="w-[100%]"
-                />
+                <img src={el.image} alt="hero" className="w-[100%]" />
               </div>
             </div>
           );
         })}
       </div>
-      
+      <div className="Expert mx-[-3%] bg-slate-100 flex h-[90vh] py-4">
+        <div className="w-2/3">
+          <h1 className="text-[3rem] my-3 text-center mx-6 font-2xl">
+            Talk to an Expert
+          </h1>
+          <p className="text-[1.3rem] leading-1 my-3 text-justify mx-6">
+            At Sprint Digital, we are a trusted custom software development
+            company and have a proven track record in delivering quality
+            solutions that meet the specific needs of our clients.
+          </p>
+          <p className="text-[1.3rem] leading-1 my-3 text-justify mx-6">
+            Offering confidence and quality assurance in our services, we take a
+            personalised approach to every project, working closely with our
+            clients to ensure successful outcomes and custom software
+            applications that work.
+          </p>
+          <p className="text-[1.3rem] leading-1 my-3 text-justify mx-6">
+            We're the team of software engineers you can trust when you're
+            looking for reliable, long-lasting and innovative custom software
+            development services. So, if you're looking for a partner to help
+            you streamline your business operations, get in touch with Sprint
+            Digital today.
+          </p>
+        </div>
+        <div className="w-2/5"></div>
+      </div>
       <div className="mx-[-3%] mb-[-15%]">
-       <Contacts/>
+        <Contacts />
       </div>
     </div>
   );
-}
+};
 
-export default Services
+export default Services;
