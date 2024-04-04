@@ -1,6 +1,7 @@
 import React from 'react'
+import './Contact.css'
 
-const Contacts = () => {
+function Contacts() {
   return (
     <>
       {/* contact form */}
@@ -31,8 +32,7 @@ const Contacts = () => {
               <input
                 type="number"
                 id="phone"
-                className="py-2 px-2 rounded-lg"
-              />
+                className="py-2 px-2 rounded-lg" />
             </div>
 
             <div className="flex flex-col w-[90%] my-3">
@@ -48,8 +48,8 @@ const Contacts = () => {
 
             <div className="flex w-[60%] justify-between px-2 items-center bg-white my-6">
               <div className='flex gap-2'>
-              <input type="checkbox" name="terms" id="agree" required  className='w-8 outline-none'/>
-              <p> I'm not a robot</p>
+                <input type="checkbox" name="terms" id="agree" required className='w-8 outline-none' />
+                <p> I'm not a robot</p>
               </div>
               <img src="logos/captcha.png" alt="captcha" className="w-12" />
             </div>
