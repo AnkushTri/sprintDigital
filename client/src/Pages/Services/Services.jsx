@@ -103,7 +103,31 @@ const Services = () => {
           );
         })}
       </div>
-      
+      <div className="Expert mx-[-3%] bg-slate-100 flex h-[90vh] py-4">
+        <div className="w-2/3">
+          <h1 className="text-[3rem]">Talk to an Expert</h1>
+          <p className="text-[1.3rem]">
+            At Sprint Digital, we are a trusted custom software development
+            company and have a proven track record in delivering quality
+            solutions that meet the specific needs of our clients.
+          </p>
+          <p>
+            Offering confidence and quality assurance in our services, we take a
+            personalised approach to every project, working closely with our
+            clients to ensure successful outcomes and custom software
+            applications that work.
+          </p>
+          <p>
+            We're the team of software engineers you can trust when you're
+            looking for reliable, long-lasting and innovative custom software
+            development services. So, if you're looking for a partner to help
+            you streamline your business operations, get in touch with Sprint
+            Digital today.
+          </p>
+          <button>Get in touch</button>
+        </div>
+        <div className="w-2/5"></div>
+      </div>
       <div className="mx-[-3%] mb-[-15%]">
        <Contacts/>
       </div>
