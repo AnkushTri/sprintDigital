@@ -22,7 +22,7 @@ const NavBar = () => {
 
   return (
     <nav>
-      <div className="navbar xsm:flex-col w-[100vw]">
+      <div className="navbar xsm:w-[100vw]">
         <div className="log">
           <img src="logos/sprint.svg" alt="sprint" />
         </div>
@@ -56,7 +56,7 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <button className="btn">
+        <button className="btn xsm:w-[30%] mx-auto self-start">
           {" "}
           <Link to="/contact">Contact</Link>
         </button>
