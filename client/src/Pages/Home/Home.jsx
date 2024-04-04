@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroSection from '../../Components/HeroSection'
+import HeroSection from '../../Components/HeroSection/HeroSection'
 import Services from '../../Components/Services/Services'
 import Works from '../../Components/Works/Works'
 import AboutUs from '../../Components/AboutUs/AboutUs'

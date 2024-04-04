@@ -4,29 +4,29 @@ const Works = () => {
   return (
     <div>
       {/* first  row */}
-      <div className="flex items-center shadow-lg py-[8rem] my-12">
+      <div className="flex items-center shadow-lg py-[8rem] my-12 xsm:my-[-5%] flex-col pb-[-10%]">
         <div className="flex-1 relative my-12">
           <img
             src="images/snap-phone.png"
             alt="phone"
-            className="w-[60%] mx-auto"
+            className="w-[60%] mx-auto xsm:w-[50%]"
           />
           <img
             src="logos/snap-arrow-left.svg"
             alt="left"
-            className="absolute bottom-[20%] left-[6%]"
+            className="absolute bottom-[20%] left-[6%] xsm:left-[10%]"
           />
           <img
             src="logos/snap-arrow-right.svg"
             alt="right"
-            className="absolute top-[20%] right-[10%]"
+            className="absolute top-[20%] right-[10%] xsm:right-[14%]"
           />
         </div>
         <div className="flex-1 px-5">
           <h3 className="py-5 uppercase text-[#464652] text-[1.2rem]">
             NATIVE APP DEVELOPMENT
           </h3>
-          <h1 className="text-[4rem] font-extrabold leading-[4.5rem]">
+          <h1 className="text-[4rem] font-extrabold leading-[4.5rem] xsm:leading-[4rem] text-[3.2rem]">
             Creating <span className="text-[var(--color-primary)]">rich</span>{" "}
             user{" "}
             <span className="text-[var(--color-primary)]">experiences</span>
@@ -45,12 +45,12 @@ const Works = () => {
       </div>
 
       {/* second  row */}
-      <div className="flex items-center my-12 shadow-lg py-[8rem]">
-        <div className="w-[50%] relative order-2 ">
+      <div className="flex items-center my-12 shadow-lg py-[8rem] xsm:my-[-5%] flex-col pb-[-10%]">
+        <div className="w-[50%] relative order-2 xsm:order-1 w-full mt-[15%]">
           <img
             src="images/rochele.png"
             alt="phone"
-            className="w-[100%] ml-[10%] aspect-[1/0.9]"
+            className="w-[100%] ml-[10%] aspect-[1/0.9] xsm:w-[90%] "
           />
           <img
             src="logos/rochele-dot-01.svg"
@@ -80,14 +80,14 @@ const Works = () => {
           <img
             src="logos/rochele-arrow.svg"
             alt="right"
-            className="absolute bottom-[0%] left-[15%]"
+            className="absolute bottom-[0%] left-[15%] xsm:bottom-[-5%]"
           />
         </div>
-        <div className="w-[50%] px-5">
+        <div className="w-[50%] px-5 xsm:w-full">
           <h3 className="py-5 uppercase text-[#464652] text-[1.2rem]">
             LEGACY MODERNISATION
           </h3>
-          <h1 className="text-[4rem] font-extrabold leading-[4.5rem]">
+          <h1 className="text-[4rem] font-extrabold leading-[4.5rem] xsm:leading-[4rem] text-[3.2rem]">
             GoodBye Paper,{" "}
             <span className="text-[var(--color-primary)]">hello profit</span>
           </h1>
@@ -105,12 +105,12 @@ const Works = () => {
       </div>
 
       {/* Third row */}
-      <div className="flex items-center my-12 shadow-lg py-[8rem]">
-        <div className="widht[50%] relative ">
+      <div className="flex items-center my-12 shadow-lg py-[8rem] xsm:my-[-5%] flex-col pb-[-10%]">
+        <div className="relative ">
           <img
             src="images/goturf-hero-min.png"
             alt="phone"
-            className="w-[100%] ml-[-20%] aspect-[3/2.5]"
+            className="w-[100%] ml-[-20%] aspect-[3/2.5] xsm:w-[90%] mx-auto ml-0"
           />
           <img
             src="logos/goturf-arrowtop.svg"
@@ -123,11 +123,11 @@ const Works = () => {
             className="absolute top-[45%] right-[26%]"
           />
         </div>
-        <div className="width-[50%] px-5 ml-[-10%]">
-          <h3 className="py-5 uppercase text-[#464652] text-[1.2rem]">
+        <div className="width-[50%] px-5 ml-[-10%] xsm:ml-0">
+          <h3 className="py-5 uppercase text-[#464652] text-[1.2rem] ">
             INTEGRATED WEB APPLICATIONS
           </h3>
-          <h1 className="text-[4rem] font-extrabold leading-[4.5rem]">
+          <h1 className="text-[4rem] font-extrabold leading-[4.5rem] xsm:leading-[4rem] text-[3.2rem]">
             Software built for
             <span className="text-[var(--color-primary)]"> purpose.</span>
           </h1>

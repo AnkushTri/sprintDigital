@@ -39,3 +39,15 @@ label {
 .red {
     width: 600px;
 }
+
+@media screen and (max-width:576px){
+input,
+textarea,
+button {
+    padding: 0.1rem 1rem;
+    border: none;
+}
+label{
+    margin: -1rem 0 !important;
+}
+}

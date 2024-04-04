@@ -6,8 +6,8 @@ import { FiTwitter } from "react-icons/fi";
 
 const Footer = () => {
   return (
-    <div className="bg-[#494949] flex flex-col px-[10%] py-12">
-      <div className="flex ">
+    <div className="bg-[#494949] flex flex-col px-[10%] py-12 xsm:px-[5%]">
+      <div className="flex xsm:flex-col gap-10">
         <div className="w-[65%]">
           <h1 className="text-[1.8rem] text-white font-bolder my-4">
             Ready when You are
@@ -57,7 +57,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex text-white w-[40%] my-12">
+      <div className="flex text-white w-[40%] my-12 xsm:w-[80%]">
         <div className="flex-1 text-[1.2rem]">
           {" "}
           <h2 className="py-2 text-[#bab7b7]">Explore</h2>
@@ -98,12 +98,12 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex text-[#bab7b7] my-2">
-        <div className="w-[65%] flex gap-4">
+      <div className="flex text-[#bab7b7] my-2 xsm:flex-col">
+        <div className="w-[65%] flex gap-4 xsm:w-full justify-center gap-8">
           <p>Privay Policy</p>
           <p>Terms & Conditions</p>
         </div>
-        <div className="w-[35%] text-center">
+        <div className="w-[35%] text-center xsm:w-full my-5">
           © 2024 Sprint. All Rights Reserved
         </div>
       </div>

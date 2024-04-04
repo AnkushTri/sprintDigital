@@ -21,12 +21,12 @@ const NavBar = () => {
   };
 
   return (
-    <nav>
+    <nav className="xsm:fixed z-[999]">
       <div className="navbar xsm:w-[100vw]">
-        <div className="log">
+        <div className="log ml-5 xsm:self-start ml-0">
           <img src="logos/sprint.svg" alt="sprint" />
         </div>
-        <div className="components">
+        <div className="components ml-[20%]">
           <ul className="xsm:flex-col">
             <li>
               <Link to="/about">About</Link>
@@ -56,7 +56,7 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <button className="btn xsm:w-[30%] mx-auto self-start">
+        <button className="btn  xsm:w-[30%] self-start">
           {" "}
           <Link to="/contact">Contact</Link>
         </button>

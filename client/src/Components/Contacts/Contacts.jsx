@@ -5,7 +5,7 @@ function Contacts() {
   return (
     <>
       {/* contact form */}
-      <div className="bg-[var(--color-primary)] w-[100%] contact_home flex py-12 px-[2%]">
+      <div className="bg-[var(--color-primary)] w-[100%] contact_home flex py-12 px-[2%] xsm:flex-col">
         <div className=" text-[white] flex-1 my-10">
           <h3 className=" text-[#464652] text-[1.2rem]">Get in touch</h3>
           <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
@@ -23,7 +23,7 @@ function Contacts() {
               <input type="text" id="name" className="py-2 px-2 rounded-lg" />
             </div>
             <div className="flex flex-col w-[90%] my-3">
-              <label htmlFor="email">Email Address*</label>
+              <label htmlFor="email" className='xsm:pb-[-1rem]'>Email Address*</label>
               <input type="email" id="email" className="py-2 px-2 rounded-lg" />
             </div>
 

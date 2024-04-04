@@ -42,12 +42,12 @@ const HeroSection = () => {
   return (
     <>
       <Wrapper isScrolled={isScrolled}>
-        <div className="title">
+        <div className="title ">
           <h1>
             <span>Unique </span>Problems? Unique <span>Solution.</span>
           </h1>
         </div>
-        <div className="content">
+        <div className="content xsm:w-full">
           <p>
             Sprint builds custom software for business. We help organisations
             launch new digital products, automate processes and digitise
@@ -71,8 +71,12 @@ const Wrapper = styled.div`
   opacity: ${({ isScrolled }) => (isScrolled ? "0" : "1")};
   pointer-events: ${({ isScrolled }) => (isScrolled ? "none" : "auto")};
 
+  @media screen and (max-width: 576px) {
+    padding: 10% 5%;
+  }
+
   .title {
-    margin:4rem 0;
+    margin: 4rem 0;
     width: 70%;
     font-size: 4rem;
     color: #fff;
@@ -81,6 +85,10 @@ const Wrapper = styled.div`
     span {
       color: var(--color-primary);
     }
+    @media screen and (max-width: 576px) {
+      width: 100% ;
+      line-height: 1.2;
+    }
   }
 
   .content {
@@ -88,6 +96,11 @@ const Wrapper = styled.div`
     font-size: 1.2rem;
     p {
       color: #fff;
+    }
+    @media screen and (max-width: 576px) {
+      width: 100% !important;
+      line-height: 1.2 !important;
+      margin-top: -2rem;
     }
   }
 `;

@@ -9,11 +9,7 @@
     position: fixed;
     z-index: 999;
 }
-.log
-{
-    margin: auto;
-    margin-left:1.2rem;
-}
+
 .components
 {
     display: flex;
@@ -42,6 +38,11 @@
     color: white;
     padding: 10px 15px;
     position: relative;
+}
+@media (max-width:768px){
+    .components ul li a{
+    padding: 0px;
+    }
 }
 
 .components ul li:not(:last-child) a::after {

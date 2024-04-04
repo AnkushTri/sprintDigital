@@ -24,10 +24,10 @@ const AboutUs = () => {
   ]
 
   return (
-    <div className="w-[100%] py-[3rem] px-[2%]">
-      <div className="w-[60%] ">
-        <h3 className=" text-[#464652] text-[1.2rem]">About Us</h3>
-        <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
+    <div className="w-[100%] py-[15%] px-[2%] xsm:px-[5%]">
+      <div className="w-[60%] xsm:w-[100%]">
+        <h3 className=" text-[#464652] text-[1.2rem] uppercase">About Us</h3>
+        <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5 xsm:leading-[4rem] text-[3.2rem]">
           We work{" "}
           <span className="text-[var(--color-primary)]">with you, </span>
           not for you.
@@ -47,7 +47,7 @@ const AboutUs = () => {
           Some of the apis we work with
         </h3>
       </div>
-      <div className="w-[80%] flex justify-between gap-[5%] my-8">
+      <div className="w-[80%] flex justify-between gap-[5%] my-8 xsm:w-full">
         {apiImg?.map((item, index) => {
           return (
             <div key={index}>
@@ -56,13 +56,13 @@ const AboutUs = () => {
           );
         })}
       </div>
-      <div className="w-[100%] py-[10%] px-[2%] ">
-        <div className="title  w-[50%] text-center mx-auto">
-          <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">
+      <div className="w-[100%] py-[10%] px-[2%] xsm:px-[5%]">
+        <div className="title  w-[50%] text-center mx-auto xsm:w-full">
+          <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5 xsm:leading-[4rem] text-[3.2rem]">
             Get Your Head in the{" "}
             <span className="text-[var(--color-primary)]"> Cloud</span>
           </h1>
-          <p className="py-5 leading-7 text-[1.2rem]">
+          <p className="py-5 leading-7 text-[1.2rem] xsm:py-1 text-justify">
             Day dreaming of changing the world, or maybe just your business?
             Whichever it may be, we're backing you to make it happen. The sky's
             the limit, so what can we help you achieve?
