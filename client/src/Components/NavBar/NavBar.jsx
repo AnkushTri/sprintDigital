@@ -1,10 +1,9 @@
 import React from "react";
 import { useState } from "react";
 import "./NavBar.css";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
-
   window.addEventListener("scroll", function () {
     var navbar = document.querySelector(".navbar");
     if (window.scrollY > window.innerHeight) {
@@ -45,10 +44,10 @@ const NavBar = () => {
                 {isOpen && (
                   <div className="dropdown-menu absolute left-[-1rem] z-[999] bg-black px-4 hover:border-b-black">
                     <Link to="/articles">
-                      <option>Articles</option>
+                      <option className="hover:border-b-2">Articles</option>
                     </Link>
                     <Link to="/calculate">
-                      <option>Calculate</option>
+                      <option className=" hover:border-b-2 ">Calculate</option>
                     </Link>
                   </div>
                 )}
@@ -56,7 +55,7 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <button className="btn xsm:w-[30%] mx-auto self-start">
+        <button className="btn xsm:w-[30%] mx-auto self-start absolute right-4 top-[50%] translate-y-[-50%] ">
           {" "}
           <Link to="/contact">Contact</Link>
         </button>

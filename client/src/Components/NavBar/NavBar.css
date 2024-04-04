@@ -1,7 +1,7 @@
-.navbar{
+.navbar {
     display: flex;
-    justify-content:space-between;
-    gap:2rem;
+    justify-content: space-between;
+    gap: 2rem;
     background-color: #0d1318;
     margin: 0 auto;
     padding: 2% 2%;
@@ -9,35 +9,39 @@
     position: fixed;
     z-index: 999;
 }
-.log
-{
+
+.log {
     margin: auto;
-    margin-left:1.2rem;
+    margin-left: 1.2rem;
 }
-.components
-{
+
+.components {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     margin: 0 auto;
     list-style: none;
 }
-.components ul{
+
+.components ul {
     display: flex;
     list-style: none;
     padding: 0;
     margin: auto;
     gap: 1.2rem;
 }
-.components ul li{
+
+.components ul li {
     display: inline-block;
     margin-right: 20px;
 }
-.components ol li{
-    display:flex;
+
+.components ol li {
+    display: flex;
     height: fit-content;
 
 }
-.components ul li a{
+
+.components ul li a {
     text-decoration: none;
     color: white;
     padding: 10px 15px;
@@ -58,43 +62,47 @@
     background-color: #918888;
 }
 
-.btn
-{
+.btn {
     display: flex-end;
     color: #ffff;
     background-color: #0DC9C5;
     border-radius: 20px;
     font-size: 16px;
-    font-family:"soleil";
+    font-family: "soleil";
     font-weight: 400;
-    padding:0.5rem 1rem;
+    padding: 0.5rem 1rem;
 }
 
 .navbar {
-    background-color:#0d1318;
+    background-color: #0d1318;
     transition: background-color 0.3s ease;
 }
 
 .navbar.scrolled {
-    background-color:white;
+    background-color: white;
 }
-.navbar.scrolled .dropdown-menu{
-    background-color:white;
+
+.navbar.scrolled .dropdown-menu {
+    background-color: white;
 }
-.navbar.scrolled .components ul li a{
+
+.navbar.scrolled .components ul li a {
     color: black;
 }
- .navbar.scrolled .log img{
+
+.navbar.scrolled .log img {
     background-clip: text;
     background: transparent;
 }
-.navbar.scrolled .log{
-     background-color: #060606;
-     padding: 5px 5px;
-     border-radius: 10px;
+
+.navbar.scrolled .log {
+    background-color: #060606;
+    padding: 5px 5px;
+    border-radius: 10px;
 }
-.navbar.scrolled .dropdown{
-    color:#0d1318
+
+.navbar.scrolled .dropdown {
+    color: #0d1318
 }
 
 .navbar.scrolled .components ul li a:hover::after {

@@ -7,14 +7,12 @@ const ScrollingContact = () => {
       <div className="marquee-wrapper text-[5rem] line-climb-6">
         <div className="marquee-container1 ">
           <p className="marquee-item">
-            Contact Us Contact Us Contact Us Contact Us Contact Us Contact Us
-            Contact UsContact Us
+          Take the next step Take the next step Take the next step Take the next step Take the next step Take the next step Take the next step
           </p>
         </div>
         <div className="marquee-container">
           <p className="marquee-item ">
-            Contact Us Contact Us Contact Us Contact Us Contact Us Contact Us
-            Contact UsContact Us
+          Take the next step Take the next step Take the next step Take the next step Take the next step Take the next step Take the next step
           </p>
         </div>
         <div className="text-[3rem] text-white text-center hover:my-5 text-bolder ">
@@ -25,14 +23,12 @@ const ScrollingContact = () => {
         </div>
         <div className="marquee-container1 ">
           <p className="marquee-item">
-            Contact Us Contact Us Contact Us Contact Us Contact Us Contact Us
-            Contact UsContact Us
+          Take the next step Take the next step Take the next step Take the next step Take the next step Take the next step Take the next step
           </p>
         </div>
         <div className="marquee-container">
           <p className="marquee-item">
-            Contact Us Contact Us Contact Us Contact Us Contact Us Contact Us
-            Contact UsContact Us
+          Take the next step Take the next step Take the next step Take the next step Take the next step Take the next step Take the next step
           </p>
         </div>
       </div>

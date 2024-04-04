@@ -85,14 +85,14 @@ const Services = () => {
                   <div>
                     {el.work.map((data, index) => {
                       return (
-                        <h2 className="py-2 ">
-                          <button
+                        <h2 className="py-2">
+                          <a
                             to="projects"
-                            className="border-black border-b-[3px] py-1 hover:text-[#4d4b4b]"
+                            className="py-1 hover:text-[#4d4b4b] hover:border-b-2 border-[#4d4b4b] transition-all duration-150 ease-in-out"
                             onClick={() => handleNav("projects")}
                           >
                             {data}
-                          </button>
+                          </a>
                         </h2>
                       );
                     })}
