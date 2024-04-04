@@ -129,9 +129,14 @@ const Services = () => {
             you streamline your business operations, get in touch with Sprint
             Digital today.
           </p>
-        </div>
-        <div>
-          <button>Get in Touch</button>
+          <div className=" border rounded-3xl text-white bg-[#24514e] w-2/6 mx-[30%]">
+            <button
+              type="button"
+              className="py-4 px-[30%] font-light text-[1rem]"
+            >
+              Get in Touch
+            </button>
+          </div>
         </div>
         <div className="w-2/5"></div>
       </div>
