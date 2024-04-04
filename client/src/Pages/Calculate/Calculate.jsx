@@ -81,8 +81,23 @@ const Calculate = () => {
       ],
     },
   ];
+  const industries = [
+  "Technology",
+  "Finance",
+  "Healthcare",
+  "Retail",
+  "Manufacturing",
+  "Education",
+  "Entertainment",
+  "Hospitality",
+  "Transportation",
+  "Real Estate",
+  "Government",
+  "Telecommunications",
+  "Media",
+  "Energy",]
   return (
-    <div className="py-[15%] px-[5%]">
+    <div className="pt-[15%] pb-[5%] px-[5%]">
       <div className="calculater">
         <img src="calc.svg" alt="cal" className="items-centre px-[15%]" />
         <div className="head">
@@ -173,7 +188,7 @@ const Calculate = () => {
           <div className="flex flex-wrap flex-grow min-[100px]: gap-[10%]">
             <div className="w-[45%] my-4">
               <label htmlFor="name">
-                Name<span>*</span> :
+                Name<span>*</span>
               </label>
               <input
                 required
@@ -185,7 +200,7 @@ const Calculate = () => {
             </div>
             <div className="w-[45%] my-4">
               <label htmlFor="cname">
-                Company name <span>*</span> :
+                Company name <span>*</span>
               </label>
               <input
                 required
@@ -197,7 +212,7 @@ const Calculate = () => {
             </div>
             <div className="w-[45%] my-4">
               <label htmlFor="email">
-                Email address<span>*</span> :
+                Email address<span>*</span>
               </label>
               <input
                 required
@@ -209,7 +224,7 @@ const Calculate = () => {
             </div>
             <div className="w-[45%] my-4">
               <label htmlFor="phone">
-                Phone number<span>*</span>:
+                Phone number<span>*</span>
               </label>
               <input
                 required
@@ -221,29 +236,50 @@ const Calculate = () => {
             </div>
           </div>
 
+          <div>
+            <label htmlFor="industry">
+              Industry <span>*</span>
+            </label>
+            <select
+              name="industry"
+              id="industry"
+              className="w-full font-light px-3 py-3 border focus:outline-none"
+            >
+              <option value="" className="py-4">
+                Select an Industry
+              </option>
+              {industries?.map((el) => {
+                return <option value={el.toLocaleLowerCase()}>{el}</option>;
+              })}
+            </select>
+          </div>
+
           {/* captcha */}
-          <div className="flex w-[60%] justify-between px-2 items-center bg-white my-6">
+          <div className="flex w-[50%] mx-auto justify-between px-4 items-center bg-white mt-6 py-2  border">
             <div className="flex gap-2">
               <input
                 type="checkbox"
                 name="terms"
                 id="agree"
                 required
-                className="w-8 outline-none"
+                className="w-8"
               />
               <p> I'm not a robot</p>
             </div>
             <img src="logos/captcha.png" alt="captcha" className="w-12" />
           </div>
-          <div className=" border rounded-2xl w-[90%]  text-white my-3">
-            <button
-              type="button"
-              className="py-3 w-[100%] mx-auto bg-[rgb(129, 227, 236)]"
-            >
+          <div className=" border rounded-3xl w-[100%]  text-white bg-[#2ae8f2] my-3">
+            <button type="button" className="py-4 w-[100%] mx-auto font-light">
               Calculate my saving
             </button>
           </div>
         </form>
+        <p className="text-center text-[grey]">
+          By submitting your details you agree that Sprint Digital may email you
+          with information regarding your potential business savings and other
+          offers. Sprint Digital will use your information within our{" "}
+          <span className="text-[blue] ">Privacy Policy</span>
+        </p>
       </div>
     </div>
   );
