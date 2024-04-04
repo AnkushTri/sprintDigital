@@ -7,7 +7,7 @@ import Contacts from '../../Components/Contacts/Contacts'
 
 const Home = () => {
   return (
-    <div className='py-[5%]'>
+    <div className='pt-[5%]'>
         <HeroSection/>
         <Services/>
         <Works/>

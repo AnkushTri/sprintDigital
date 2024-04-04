@@ -1,6 +1,6 @@
-import React from 'react'
+import React from "react";
 import { Link } from "react-router-dom";
-import "./Project.css"
+import "./Project.css";
 const Project = () => {
   const data = [
     {
@@ -36,7 +36,7 @@ const Project = () => {
   ];
   return (
     <div>
-      <div className="py-[5%] px-[2%]">
+      <div className="pt-[15%] px-[2%]">
         <div className="header">
           <h3>FEATURED PROJECTS</h3>
           <h1>
@@ -98,6 +98,6 @@ const Project = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Project
+export default Project;
