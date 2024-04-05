@@ -37,25 +37,25 @@ const Project = () => {
   ];
   return (
     <div>
-      <div className="pt-[15%] px-[2%]">
+      <div className="pt-[10%] px-[2%]">
         <div className="header">
           <h3>FEATURED PROJECTS</h3>
-          <h1>
+          <h1 className="text-[3.2rem]">
             See what we can <br />
             <span>do for you</span>
           </h1>
         </div>
-        <div className="image-gallery">
+        <div className="image-gallery xsm:flex-col my-6 px-[5%]">
           {data.map((image, index) => (
             <div
               key={image.id}
-              className={index % 2 ? "image-container" : "cont"}
+              className={index % 2 ? "image-container xsm:w-full my-12 py-0" : "cont xsm:w-full"}
             >
-              <img src={image.imageUrl} alt={image.heading} className="image" />
+              <img src={image.imageUrl} alt={image.heading} className="image xsm:w-[80%] mx-auto" />
               <div className="image-details">
                 <h3 className="heading">{image.heading}</h3>
-                <p className="description">{image.description}</p>
-                <a href={image.link} className="read-more">
+                <p className="description xsm:my-[-1rem]">{image.description}</p>
+                <a href={image.link} className="read-more text-black font-black">
                   Read Case-Study
                 </a>
               </div>

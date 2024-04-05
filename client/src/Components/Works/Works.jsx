@@ -4,12 +4,12 @@ const Works = () => {
   return (
     <div>
       {/* first  row */}
-      <div className="flex items-center shadow-lg py-[8rem] my-12 xsm:my-[-5%] flex-col pb-[-10%]">
+      <div className="flex items-center shadow-lg py-[2rem] my-12 xsm:flex-col my-[-5%] pb-[-10%]">
         <div className="flex-1 relative my-12">
           <img
             src="images/snap-phone.png"
             alt="phone"
-            className="w-[60%] mx-auto xsm:w-[50%]"
+            className="w-[65%] mx-auto aspect-[1/1.8] xsm:w-[45%]"
           />
           <img
             src="logos/snap-arrow-left.svg"
@@ -19,7 +19,7 @@ const Works = () => {
           <img
             src="logos/snap-arrow-right.svg"
             alt="right"
-            className="absolute top-[20%] right-[10%] xsm:right-[14%]"
+            className="absolute top-[20%] right-[10%] xsm:right-[13%]"
           />
         </div>
         <div className="flex-1 px-5">
@@ -45,8 +45,8 @@ const Works = () => {
       </div>
 
       {/* second  row */}
-      <div className="flex items-center my-12 shadow-lg py-[8rem] xsm:my-[-5%] flex-col pb-[-10%]">
-        <div className="w-[50%] relative order-2 xsm:order-1 w-full mt-[15%]">
+      <div className="flex items-center my-12 shadow-lg py-[8rem] xsm:flex-col my-[-15%]  pb-[-10%]">
+        <div className="w-[50%] relative order-2 xsm:order-1 w-full mt-[20%]">
           <img
             src="images/rochele.png"
             alt="phone"
@@ -105,12 +105,12 @@ const Works = () => {
       </div>
 
       {/* Third row */}
-      <div className="flex items-center my-12 shadow-lg py-[8rem] xsm:my-[-5%] flex-col pb-[-10%]">
+      <div className="flex items-center my-12 shadow-lg py-[8rem] xsm:flex-col mt-[-15%] pb-[-10%]">
         <div className="relative ">
           <img
             src="images/goturf-hero-min.png"
             alt="phone"
-            className="w-[100%] ml-[-20%] aspect-[3/2.5] xsm:w-[90%] mx-auto ml-0"
+            className="w-[100%] ml-[-20%] aspect-[3/2.5] xsm:w-[90%] mx-auto ml-[0%]"
           />
           <img
             src="logos/goturf-arrowtop.svg"

@@ -1,0 +1,11 @@
+@media screen and (max-width:"576px") {
+h1{
+    /* leading-[4rem] text-[3.2rem] */
+    font-size: 3.2rem!important;
+    line-height: 4rem!important;
+}
+
+}
+p{
+    text-align: justify!important;
+}

@@ -26,8 +26,8 @@ const About = () => {
   ];
 
   return (
-    <div>
-      <div className="w-[50%] px-[2%] pt-[10%]">
+    <div className="">
+      <div className="w-[50%] px-[2%] pt-[10%] xsm:w-[100%] px-[5%]">
         <h3 className="text-[#46465294] text-[1.8rem] uppercase font-bold">
           About Us
         </h3>
@@ -46,8 +46,8 @@ const About = () => {
       </div>
       {/* <div><Scroll /></div> */}
       {/* what we do */}
-      <div className="flex px-[5%] gap-10 py-[8rem]">
-        <div className="title  w-[50%] ">
+      <div className="flex px-[5%] gap-10 py-[8rem] xsm:flex-col gap-0 pb-0">
+        <div className="title  w-[50%] xsm:w-full">
           <h3 className=" text-[#464652] text-[1.2rem] uppercase">
             What We do
           </h3>
@@ -56,7 +56,7 @@ const About = () => {
             <span className="text-[var(--color-primary)]"> create change</span>
           </h1>
         </div>
-        <div className="w-[50%]">
+        <div className="w-[50%] xsm:w-full">
           <p className="my-5 leading-7 text-[1.2rem]">
             We work with clients from a range of industries, and have spent the
             past decade perfecting our craft. Our goal is to make digital
@@ -78,7 +78,7 @@ const About = () => {
 
       {/* OUr core values */}
       <div className="px-[5%] gap-10 py-[8rem]">
-        <div className="title  w-[50%] ">
+        <div className="title  w-[50%] xsm:w-[100%]">
           <h3 className=" text-[#66666e] text-[1.2rem] uppercase">
             Our core values
           </h3>
@@ -90,12 +90,12 @@ const About = () => {
             </span>
           </h1>
         </div>
-        <div className="flex justify-between my-12">
+        <div className="flex justify-between my-12 xsm:flex-col my-0">
           {values.map((el, index) => {
             return (
-              <div key={index} className="w-[30%]">
+              <div key={index} className="w-[30%] xsm:w-full">
                 <img src={el.img} alt="value" className="my-5" />
-                <h1 className="text-[1.5rem] my-5 font-black">{el.title}</h1>
+                <h2 className="text-[1.5rem] my-5 font-black">{el.title}</h2>
                 <p className="my-5 text-[1.2rem]">{el.description}</p>
               </div>
             );
@@ -104,8 +104,8 @@ const About = () => {
       </div>
 
       {/* How we do it */}
-      <div className="flex px-[5%] gap-10 py-[8rem] bg-[#eae8e8]">
-        <div className="title  w-[50%] ">
+      <div className="flex px-[5%] gap-10 py-[8rem] bg-[#eae8e8] xsm:flex-col">
+        <div className="title  w-[50%] xsm:w-[100%]">
           <h3 className=" text-[#464652] text-[1.2rem] uppercase">
             how we do it
           </h3>

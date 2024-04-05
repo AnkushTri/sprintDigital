@@ -11,11 +11,13 @@ import {BrowserRouter,Routes,Route} from "react-router-dom"
 import "./App.css"
 import Contacts from './Components/Contacts/Contacts'
 import Services from './Pages/Services/Services'
+import ScrollToTop from './Components/Scroll/ScrollToTop'
 
 const App = () => {
   return (
     <BrowserRouter>
       <NavBar />
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />

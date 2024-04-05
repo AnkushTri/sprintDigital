@@ -99,25 +99,27 @@ const Calculate = () => {
   ];
   return (
     <div className="pt-[15%] pb-[5%] px-[5%]">
-      <div className="calculater">
+      <div className="calculater mx-[20%] xsm:mx-0">
         <img src="calc.svg" alt="cal" className="items-centre px-[15%]" />
-        <div className="head">
+        <div className="head xsm:text-[0.7rem]">
           <h3 className="header text-center font-bold text-xl text-slate-400 my-8 tracking-wider ">
             BUSINESS CALCULATOR
           </h3>
           <h1>
             How much could your business <span>save in overheads?</span>
           </h1>
-          <h3 className=" text-center font-medium text-xl">
-            Answer a few simple questions on your current workflow and
+          <h3 className=" text-center font-medium text-xl xsm:text-[1rem]">
+            Answer a few simple questions on your current workflow
           </h3>
-          <h3 className=" text-center font-medium text-xl">
-            we wil provide you with an estimate of how much a
+          <h3 className=" text-center font-medium text-xl xsm:text-[1rem]">
+            and we wil provide you with an estimate of how much a
           </h3>
-          <h3 className=" text-center font-medium text-xl">
+          <h3 className=" text-center font-medium text-xl xsm:text-[1rem]">
             custom software solutioncould save your business
           </h3>
-          <h3 className=" text-center font-medium text-xl">annually.</h3>
+          <h3 className=" text-center font-medium text-xl xsm:text-[1rem]">
+            annually.
+          </h3>
         </div>
         <div className="tellus about my-4 ">
           <h1 className="font-bold text-2xl py-4 text-center">
@@ -157,17 +159,17 @@ const Calculate = () => {
         <div>
           {calc.map((item, index) => (
             <div key={index} className="mt-12">
-              <h1 className="text-[1.2rem] ">{item.title}</h1>
-              <div className="grid grid-cols-2 items-center">
+              <h2 className="text-[1.2rem] ">{item.title}</h2>
+              <div className="grid grid-cols-2 items-center xsm:grid-cols-1">
                 {item.options?.map((el) => {
                   return (
-                    <div key={el} className="my-4 mx-4 text-[1.2rem]">
+                    <div key={el} className="my-4 mx-4 text-[1.2rem] xsm:mx-0">
                       <input
                         type="checkbox"
                         id={el.tag}
-                        className="outline-none w-12 h-6 bg-slate-400"
+                        className="outline-none w-12 h-6 bg-slate-400 "
                       />
-                      <span className="px-4">
+                      <span className="px-4 xsm:px-0 ">
                         {el.tag}{" "}
                         <span className="text-[grey] text-[0.8rem]">
                           {el.subtitle}
@@ -176,11 +178,19 @@ const Calculate = () => {
                     </div>
                   );
                 })}
-                {/* <label htmlFor="Input">Other's Please Specify</label> */}
-                <input
-                  type="text"
-                  className="py-2 px-3 rounded-lg bg-[#e2f1ee] focus:outline-[#7ec6cd]"
-                />
+                <div className="px-3 ml-[5%] flex flex-col xsm:my-4 ml-[1%]">
+                  <label
+                    htmlFor="ohter"
+                    className="text-black text-[1rem] xsm:pb-[1.5rem]"
+                  >
+                    Other (Please Specify)
+                  </label>
+                  <input
+                    id="oher"
+                    type="text"
+                    className="py-2 px-3 rounded-lg bg-[#e2f1ee] focus:outline-[#7ec6cd]"
+                  />
+                </div>
               </div>
             </div>
           ))}
@@ -189,8 +199,8 @@ const Calculate = () => {
         {/* form */}
         <form action="" className="my-12">
           <h1 className="text-[1.5rem]">Tell us about you</h1>
-          <div className="flex flex-wrap flex-grow min-[100px]: gap-[10%]">
-            <div className="w-[45%] my-4">
+          <div className="flex flex-wrap flex-grow min-[100px]: gap-[10%] xsm:flex-col">
+            <div className="w-[45%] my-4 xsm:w-[100%]">
               <label htmlFor="name">
                 Name<span>*</span>
               </label>
@@ -202,7 +212,7 @@ const Calculate = () => {
                 className="rounded-md py-2 w-[100%]"
               />
             </div>
-            <div className="w-[45%] my-4">
+            <div className="w-[45%] my-4 xsm:w-[100%]">
               <label htmlFor="cname">
                 Company name <span>*</span>
               </label>
@@ -214,7 +224,7 @@ const Calculate = () => {
                 className="rounded-md py-2 w-[100%]"
               />
             </div>
-            <div className="w-[45%] my-4">
+            <div className="w-[45%] my-4 xsm:w-[100%]">
               <label htmlFor="email">
                 Email address<span>*</span>
               </label>
@@ -226,7 +236,7 @@ const Calculate = () => {
                 className="rounded-md py-2 w-[100%]"
               />
             </div>
-            <div className="w-[45%] my-4">
+            <div className="w-[45%] my-4 xsm:w-[100%]">
               <label htmlFor="phone">
                 Phone number<span>*</span>
               </label>
