@@ -98,12 +98,12 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex text-[#bab7b7] my-2 xsm:flex-col">
-        <div className="w-[65%] flex gap-4 xsm:w-full justify-center gap-8">
+      <div className="flex text-[#bab7b7]  gap-[30%] my-2 xsm:flex-col">
+        <div className="w-[50%] flex gap-[35%] xsm:w-full justify-center ">
           <p>Privay Policy</p>
           <p>Terms & Conditions</p>
         </div>
-        <div className="w-[35%] text-center xsm:w-full my-5">
+        <div className="w-[35%] text-center xsm:w-full">
           © 2024 Sprint. All Rights Reserved
         </div>
       </div>

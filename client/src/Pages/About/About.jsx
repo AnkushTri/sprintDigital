@@ -27,8 +27,8 @@ const About = () => {
 
   return (
     <div className="">
-      <div className="w-[50%] px-[3%] pt-[10%] xsm:w-[100%] pt-[6rem]">
-        <h3 className="text-[#46465294] text-[1.8rem] uppercase font-bold">
+      <div className="w-[50%] px-[3%] pt-[10%] xsm:w-[100%]">
+        <h3 className="text-[#46465294] text-[1.3rem] uppercase font-bold">
           About Us
         </h3>
         <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5">

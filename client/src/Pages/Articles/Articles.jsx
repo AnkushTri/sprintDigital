@@ -88,7 +88,7 @@ const Articles = () => {
   return (
     <div className="py-[5%] ">
       <div className="article px-[3%] ">
-        <h2 className=" py-4 text-2xl ">ARTICLES</h2>
+        <h2 className="text-[1.3rem] text-[#46465294]  ">ARTICLES</h2>
         <h1 className=" py-2 text-[3em] font-bold">A collection of </h1>
         <span className=" py-2 text-[3rem] font-bold">
           <h1>articles tips & </h1>

@@ -29,7 +29,7 @@ const NavBar = () => {
   return (
     <nav>
       <div className="navbar xsm:w-[100vw] flex-col">
-        <div className="log w-[7%] px-2 py-1  xsm:top-5 w-[20%] py-0">
+        <div className="log w-[10%] px-2 py-1 xsm:top-5">
           <a href="/">
             <img src="logos/sprint.svg" alt="sprint" />
           </a>
