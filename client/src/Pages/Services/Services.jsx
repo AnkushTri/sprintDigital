@@ -44,7 +44,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="px-[3%] py-[10rem] w-[100%]xsm:px-[5%] py-[6rem]">
+    <div className="px-[3%] pt-[10%] w-[100%]xsm:px-[5%] py-[6rem]">
       <div className="w-[70%] xsm:w-full">
         <h3 className="text-[#4444489e] text-[1.2rem] uppercase font-bold ">
           Our Services
@@ -68,7 +68,7 @@ const Services = () => {
         {softwareData?.map((el, index) => {
           return (
             <div
-              className="flex py-[6rem] gap-[8%] xsm:flex-col py-2 shadow-md"
+              className="flex py-[6rem] gap-[8%] xsm:flex-col py-2"
               key={index}
             >
               <div className={index === 1 ? "flex-1 order-2" : "flex-1"}>

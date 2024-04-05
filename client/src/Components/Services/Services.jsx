@@ -97,7 +97,7 @@ const Services = () => {
 }
 
 const Wrapper = styled.div`
-  padding: 0 5%;
+  padding: 0 3%;
   .services {
     display: flex;
     justify-content: space-between;

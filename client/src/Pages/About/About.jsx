@@ -27,7 +27,7 @@ const About = () => {
 
   return (
     <div className="">
-      <div className="w-[50%] px-[2%] pt-[10%] xsm:w-[100%] px-[5%]">
+      <div className="w-[50%] px-[3%] pt-[10%] xsm:w-[100%] pt-[6rem]">
         <h3 className="text-[#46465294] text-[1.8rem] uppercase font-bold">
           About Us
         </h3>
@@ -46,7 +46,7 @@ const About = () => {
       </div>
       {/* <div><Scroll /></div> */}
       {/* what we do */}
-      <div className="flex px-[5%] gap-10 py-[8rem] xsm:flex-col gap-0 pb-0">
+      <div className="flex px-[3%] gap-10 py-[8rem] xsm:flex-col gap-0 pb-0">
         <div className="title  w-[50%] xsm:w-full">
           <h3 className=" text-[#464652] text-[1.2rem] uppercase">
             What We do
@@ -77,7 +77,7 @@ const About = () => {
       </div>
 
       {/* OUr core values */}
-      <div className="px-[5%] gap-10 py-[8rem]">
+      <div className="px-[3%] gap-10 py-[8rem] xsm:px-[5%]">
         <div className="title  w-[50%] xsm:w-[100%]">
           <h3 className=" text-[#66666e] text-[1.2rem] uppercase">
             Our core values
@@ -104,7 +104,7 @@ const About = () => {
       </div>
 
       {/* How we do it */}
-      <div className="flex px-[5%] gap-10 py-[8rem] bg-[#eae8e8] xsm:flex-col">
+      <div className="flex px-[3%] gap-10 py-[8rem] bg-[#eae8e8] xsm:py-[5%] flex-col">
         <div className="title  w-[50%] xsm:w-[100%]">
           <h3 className=" text-[#464652] text-[1.2rem] uppercase">
             how we do it

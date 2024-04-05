@@ -22,7 +22,7 @@ const Works = () => {
             className="absolute top-[20%] right-[10%] xsm:right-[13%]"
           />
         </div>
-        <div className="flex-1 px-5">
+        <div className="flex-1 px-[3%]">
           <h3 className="py-5 uppercase text-[#464652] text-[1.2rem]">
             NATIVE APP DEVELOPMENT
           </h3>
@@ -83,7 +83,7 @@ const Works = () => {
             className="absolute bottom-[0%] left-[15%] xsm:bottom-[-5%]"
           />
         </div>
-        <div className="w-[50%] px-5 xsm:w-full">
+        <div className="w-[50%] px-[3%] xsm:w-full">
           <h3 className="py-5 uppercase text-[#464652] text-[1.2rem]">
             LEGACY MODERNISATION
           </h3>
@@ -123,7 +123,7 @@ const Works = () => {
             className="absolute top-[45%] right-[26%]"
           />
         </div>
-        <div className="width-[50%] px-5 ml-[-10%] xsm:ml-0">
+        <div className="width-[50%] px-[3%] ml-[-10%] xsm:ml-0">
           <h3 className="py-5 uppercase text-[#464652] text-[1.2rem] ">
             INTEGRATED WEB APPLICATIONS
           </h3>
