@@ -4,6 +4,7 @@ import Services from '../../Components/Services/Services'
 import Works from '../../Components/Works/Works'
 import AboutUs from '../../Components/AboutUs/AboutUs'
 import Contacts from '../../Components/Contacts/Contacts'
+import "./Home.css"
 
 const Home = () => {
   return (

@@ -56,7 +56,7 @@ const AboutUs = () => {
           );
         })}
       </div>
-      <div className="w-[100%] py-[10%] px-[2%] xsm:px-[5%]">
+      <div className="w-[100%] py-[10%]">
         <div className="title  w-[50%] text-center mx-auto xsm:w-full">
           <h1 className="text-[4rem] font-extrabold leading-[4.5rem]  my-5 xsm:leading-[4rem] text-[3.2rem]">
             Get Your Head in the{" "}

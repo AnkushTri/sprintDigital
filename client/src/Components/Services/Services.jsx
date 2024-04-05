@@ -68,7 +68,7 @@ const Services = () => {
     <Wrapper>
       <h2 className='uppercase text-[grey]'>Services</h2>
       <div className="services xsm:flex-col mb-[-10%]">
-        <h1>
+        <h1 className='xsm:text-[3rem]'>
           What We <span>DO</span>
         </h1>
         <p>
@@ -81,7 +81,7 @@ const Services = () => {
         {
             services.map((el)=>{
                return <div className="ser" key={el}>
-                <h1>{el.type}</h1>
+                <h2 className='xsm:text-[2rem]'>{el.type}</h2>
                 {
                     el?.content.map((item)=>{
                         return <li>{item.title}</li>;

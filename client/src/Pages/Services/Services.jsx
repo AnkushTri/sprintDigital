@@ -44,8 +44,8 @@ const Services = () => {
   ];
 
   return (
-    <div className="px-[3%] py-[10rem] w-[100%]">
-      <div className="w-[70%]">
+    <div className="px-[3%] py-[10rem] w-[100%]xsm:px-[5%] py-[6rem]">
+      <div className="w-[70%] xsm:w-full">
         <h3 className="text-[#4444489e] text-[1.2rem] uppercase font-bold ">
           Our Services
         </h3>
@@ -57,7 +57,7 @@ const Services = () => {
           </span>
           Services
         </h1>
-        <p className="py-5 leading-7 text-[1.2rem] text-[#4b4a4a] w-[70%]">
+        <p className="py-5 leading-7 text-[1.2rem] text-[#4b4a4a] w-[70%] xsm:w-full py-0">
           We are an India-based software agency that designs and develops
           digital products for the people that use them. Our strength lies in
           our talented team and our capability to develop end-to-end business
@@ -67,7 +67,10 @@ const Services = () => {
       <div className="py-6">
         {softwareData?.map((el, index) => {
           return (
-            <div className="flex py-[6rem] gap-[8%]" key={index}>
+            <div
+              className="flex py-[6rem] gap-[8%] xsm:flex-col py-2 shadow-md"
+              key={index}
+            >
               <div className={index === 1 ? "flex-1 order-2" : "flex-1"}>
                 <h1 className="text-[2.5rem] font-extrabold leading-[4.5rem]  mt-5">
                   {el.title}
@@ -106,41 +109,39 @@ const Services = () => {
           );
         })}
       </div>
-      <div className="Expert mx-[-3%] bg-slate-100 flex  py-4">
-        <div className="w-2/3">
-          <h1 className="text-[3rem] my-3 text-center mx-6 font-2xl">
+      <div className="Expert mx-[-3%] bg-slate-100 flex py-8">
+        <div className="">
+          <h1 className="text-[3rem] my-3 text-center font-2xl">
             Talk to an Expert
           </h1>
-          <p className="text-[1.3rem] leading-1 my-3 text-justify mx-6">
-            At Sprint Digital, we are a trusted custom software development
-            company and have a proven track record in delivering quality
-            solutions that meet the specific needs of our clients.
-          </p>
-          <p className="text-[1.3rem] leading-1 my-3 text-justify mx-6">
-            Offering confidence and quality assurance in our services, we take a
-            personalised approach to every project, working closely with our
-            clients to ensure successful outcomes and custom software
-            applications that work.
-          </p>
-          <p className="text-[1.3rem] leading-1 my-3 text-justify mx-6">
-            We're the team of software engineers you can trust when you're
-            looking for reliable, long-lasting and innovative custom software
-            development services. So, if you're looking for a partner to help
-            you streamline your business operations, get in touch with Sprint
-            Digital today.
-          </p>
-          <div className=" border rounded-3xl text-white bg-[#24514e] w-2/6 mx-[30%]">
-            <button
-              type="button"
-              className="py-4 px-[30%] font-light text-[1rem]"
-            >
-              Get in Touch
+          <div className="w-[80%] mx-auto xsm:w-full">
+            <p className="py-1 leading-7 text-[1.2rem] text-[#4b4a4a] text-justify mx-6">
+              At Sprint Digital, we are a trusted custom software development
+              company and have a proven track record in delivering quality
+              solutions that meet the specific needs of our clients.
+            </p>
+            <p className="py-1 leading-7 text-[1.2rem] text-[#4b4a4a] text-justify mx-6">
+              Offering confidence and quality assurance in our services, we take
+              a personalised approach to every project, working closely with our
+              clients to ensure successful outcomes and custom software
+              applications that work.
+            </p>
+            <p className="py-1 leading-7 text-[1.2rem] text-[#4b4a4a] text-justify mx-6">
+              We're the team of software engineers you can trust when you're
+              looking for reliable, long-lasting and innovative custom software
+              development services. So, if you're looking for a partner to help
+              you streamline your business operations, get in touch with Sprint
+              Digital today.
+            </p>
+          </div>
+          <div className=" border rounded-3xl w-[30%] mx-auto bg-[#45d3ef] text-[white] font-bolder my-6">
+            <button type="button" className="py-3 w-[100%] mx-auto">
+              Send message
             </button>
           </div>
         </div>
-        <div className="w-2/5"></div>
       </div>
-      <div className="mx-[-3%] mb-[-15%]">
+      <div className="mx-[-3%] mb-[-15%] pb-[5%]">
         <Contacts />
       </div>
     </div>

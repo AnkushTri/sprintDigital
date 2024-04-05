@@ -9,9 +9,9 @@ const Footer = () => {
     <div className="bg-[#494949] flex flex-col px-[10%] py-12">
       <div className="flex xsm:flex-col gap-12">
         <div className="w-[65%] xsm:w-full">
-          <h1 className="text-[2rem] text-white font-bold my-4">
+          <h3 className="text-[2rem] text-white font-bold my-4">
             Ready when You are
-          </h1>
+          </h3>
           <button className="bg-[#0DC9C5] text-white rounded-3xl py-4 px-8">
             Get in Touch
           </button>
@@ -52,7 +52,7 @@ const Footer = () => {
               <IoIosStar />
               <IoIosStar />
             </div>
-            <h1 className="uppercase text-white ">7 Reviews</h1>
+            <h3 className="uppercase text-white ">7 Reviews</h3>
           </div>
         </div>
       </div>
