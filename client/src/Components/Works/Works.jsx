@@ -4,12 +4,12 @@ const Works = () => {
   return (
     <div>
       {/* first  row */}
-      <div className="flex items-center shadow-lg py-[8rem] my-12 xsm:my-[-5%] flex-col pb-[-10%]">
+      <div className="flex items-center shadow-lg py-[2rem] my-12 xsm:my-[-5%] pb-[-10%]">
         <div className="flex-1 relative my-12">
           <img
             src="images/snap-phone.png"
             alt="phone"
-            className="w-[60%] mx-auto xsm:w-[50%]"
+            className="w-[65%] mx-auto aspect-[1/1.5] xsm:w-[50%]"
           />
           <img
             src="logos/snap-arrow-left.svg"
@@ -45,7 +45,7 @@ const Works = () => {
       </div>
 
       {/* second  row */}
-      <div className="flex items-center my-12 shadow-lg py-[8rem] xsm:my-[-5%] flex-col pb-[-10%]">
+      <div className="flex items-center my-12 shadow-lg py-[8rem] xsm:my-[-5%]  pb-[-10%]">
         <div className="w-[50%] relative order-2 xsm:order-1 w-full mt-[15%]">
           <img
             src="images/rochele.png"
@@ -105,7 +105,7 @@ const Works = () => {
       </div>
 
       {/* Third row */}
-      <div className="flex items-center my-12 shadow-lg py-[8rem] xsm:my-[-5%] flex-col pb-[-10%]">
+      <div className="flex items-center my-12 shadow-lg py-[8rem] xsm:my-[-5%] pb-[-10%]">
         <div className="relative ">
           <img
             src="images/goturf-hero-min.png"

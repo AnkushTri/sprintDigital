@@ -77,7 +77,7 @@ const Services = () => {
           bring real value to businesses and help them achieve their goals.
         </p>
       </div>
-      <div className="service_type pt-12 xsm:flex-col ">
+      <div className="service_type pt-[15%] xsm:flex-col">
         {
             services.map((el)=>{
                return <div className="ser" key={el}>
